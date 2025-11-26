@@ -1,6 +1,7 @@
 var menu = document.querySelector("#nav i")
 var cross = document.querySelector("#full i")
 
+
 var tl = gsap.timeline();
 
 tl.to("#full",{
@@ -27,6 +28,10 @@ cross.addEventListener("click",()=>{
     tl.reverse()
 })
 
+document.querySelector("#left").addEventListener("click",()=>{
+    tl.reverse()
+})
+
 gsap.from("#nav",{
     y:-100,
     opacity:0,
@@ -34,3 +39,29 @@ gsap.from("#nav",{
     ease:"easeInOut",
     delay :0.5,
 })
+
+var cursor = document.querySelector("#cursor");
+cursor.style.opacity = 0;
+
+document.addEventListener("mousemove", (dets) => {
+    gsap.to(cursor, {
+        x: dets.x,
+        y: dets.y,
+        duration: 0.6,
+        ease: "power3.out",
+    });
+
+    gsap.to(cursor, {
+        opacity: 1,
+        duration: 0.6
+    });
+});
+
+
+document.addEventListener("mouseleave", () => {
+    gsap.to(cursor, {
+        opacity: 0,
+        duration: 0.6,
+        ease: "power3.out"
+    });
+});

@@ -8,8 +8,8 @@
 body, html{
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 body{
     overflow-x: hidden;
@@ -20,6 +20,7 @@ body{
     background-image: url(https://i.pinimg.com/1200x/13/41/45/13414519583c03a8576b45d6171c11c9.jpg) ;
     background-size: cover;
     background-position: center;
+    
 }
 #nav{
     display: flex;
@@ -47,6 +48,12 @@ body{
     backdrop-filter: blur(10px);
     padding : 110px 60px;
 }
+#left{
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    background-color: transparent;
+}
 #full h4{
     color: white;
     font-size: 45px;
@@ -70,5 +77,7 @@ body{
     width: 20px;
     background-color: white;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
 }
