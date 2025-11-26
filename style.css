@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: gilroy;
+    font-family: "Poppins", sans-serif;
+    font: white;
 }
 body, html{
     margin: 0;
@@ -13,8 +14,30 @@ body, html{
 #main{
     height: 100%;
     width: 100%;
-    background-color: #111;
+    background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/23027.jpg) ;
+    background-size: cover;
+    background-position: center;
 }
-#main h1{
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
     color: white;
+}
+#nav h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+#nav i{
+    font-size: 30px;
+    font-weight: 800;
+}
+#full{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    background-color: white;
+    top: 0%;
+    right: 0%;
 }
