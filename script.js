@@ -32,4 +32,5 @@ gsap.from("#nav",{
     opacity:0,
     duration:2,
     ease:"easeInOut",
+    delay :0.5,
 })

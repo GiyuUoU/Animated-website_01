@@ -17,7 +17,7 @@ body{
 #main{
     height: 100%;
     width: 100%;
-    background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/23027.jpg) ;
+    background-image: url(https://i.pinimg.com/1200x/13/41/45/13414519583c03a8576b45d6171c11c9.jpg) ;
     background-size: cover;
     background-position: center;
 }
@@ -64,4 +64,11 @@ body{
      font-weight: 600;
      font-size: 25px;
      cursor: pointer;
+}
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
 }
